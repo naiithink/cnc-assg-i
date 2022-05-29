@@ -1,0 +1,12 @@
+# Font
+*.[ot]tf        -text -diff
+*.woff          -text -diff
+*.woff?         -text -diff
+
+# Media
+*.bmp           -text -diff
+*.gif           -text -diff
+*.jpg           -text -diff
+*.jpeg          -text -diff
+*.pdf           -text -diff
+*.png           -text -diff
