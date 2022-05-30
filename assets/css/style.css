@@ -1,0 +1,123 @@
+@import "onload.css";
+
+:root {
+    --GLD: 1.618;
+    --sidebar-width: 24%;
+    --sidebar-region: 34%;
+    --main-right-margin: 10%; /*
+                               * --sidebar-region - sidebar-width
+                               * main->margin-left == --sidebar-region
+                               */
+    --the-red: #FF5433;
+    --link-color: #0074CC;
+    --link-color-hover: #1991F5;
+    --main-font-family: "Inter", "Noto Sans Thai", "-apple-system", "BlinkMacSystemFont", "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", "Helvetica", "Cantarell", "Ubuntu", "Roboto", "Noto", "Arial", "Tahoma", sans-serif;
+    --heading-font-family: "Inter", "IBM Plex Sans Thai", "Noto Sans Thai", "-apple-system", "BlinkMacSystemFont", "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", "Helvetica", "Cantarell", "Ubuntu", "Roboto", "Noto", "Arial", "Tahoma", sans-serif;
+    --varbatim-font-family: "Noto Sans Mono", "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", monospace;
+}
+
+#sidebar {
+    height: 100%;
+    width: var(--sidebar-width);
+    position: fixed;
+    z-index: 1;
+    background-color: #DCD05A;
+    opacity: 90%;
+    overflow-x: hidden;
+    margin-left: 10px;
+    box-shadow: 10px 12px #000000;
+}
+
+#sidebar > h1 {
+    font-family: var(--header-font-family);
+    font-size: xx-large;
+    padding-top: 16%;
+}
+
+#sidebar a {
+    display: block;
+    padding: 6px 8px 6px 16px;
+    font-family: var(--header-font-family);
+}
+
+.main {
+    height: 100%;
+    margin-left: var(--sidebar-region);
+    margin-right: var(--main-right-margin);
+    padding: 0px 10px;
+}
+
+.the-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font-family);
+    /* padding-top: 1.6ex; */
+    padding-top: calc(var(--GLD) * var(--GLD) * 1.6ex);
+}
+
+body,
+input[type="button"],
+p {
+    font-family: var(--main-font-family);
+}
+
+code,
+pre {
+    font-family: var(--varbatim-font-family);
+}
+
+textarea {
+    font-family: var(--main-font-family);
+    font-size: 1em;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+.verb {
+    font-family: var(--varbatim-font-family);
+}
+
+img.ans {
+    height: 4ex;
+}
+
+.ans-button {
+    cursor: url("/assets/img/GarbageKat.svg"), url("../img/GarbageKat.svg"), help;
+    height: 1em;
+    font-size: 1em;
+}
+
+qa[type="container"] {
+    display: flex;
+    gap: calc(10%)
+}
+
+qa[type="container"] > qa[type="item"] {
+    display: block;
+}
+
+qa[type="item"] > ques {
+    display: block;
+    font-family: var(--main-font-family);
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 1.6ex;
+    padding-bottom: 0.8ex;
+}
+
+qa[type="item"] > answ {
+    display: block;
+    font-family: var(--main-font-family);
+    font-size: normal;
+    font-weight: normal;
+}
