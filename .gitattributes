@@ -10,3 +10,4 @@
 *.jpeg          -text -diff
 *.pdf           -text -diff
 *.png           -text -diff
+*.svg           -text -diff
