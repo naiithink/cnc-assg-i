@@ -194,7 +194,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   #topbar, #sidebar-v-stack, main {
     display: none;
   }
@@ -311,11 +311,11 @@ picture.ans > source, picture.ans > img {
     transform: translate(0);
   }
 
-  20%{
+  20% {
     transform: translate(6em, 8em);
   }
 
-  40%{
+  40% {
     transform: translate(10em, -12em);
   }
 
