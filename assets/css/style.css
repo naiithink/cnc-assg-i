@@ -137,8 +137,7 @@
   }
 
   .main-struct {
-    display: grid;
-    grid-template-rows: 4% 1fr;
+    display: block;
     overflow: hidden;
   }
 
