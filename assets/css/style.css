@@ -1,4 +1,4 @@
-@import url("{{ /assets/css/globals.css | absolute_url }}");
+@import url("{{ '/assets/css/globals.css' | absolute_url }}");
 
 :root {
   --primary-color: #f1bf42;
