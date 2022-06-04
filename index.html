@@ -1,11 +1,3 @@
----
-title: naiithink
-description: CNC, Assignment I - create a simple self introduction page with HTML and CSS
-domain: naiithink.github.io
-url: https://naiithink.github.io
-baseurl: /cnc-assg-i
----
-
 <!DOCTYPE html>
 
 <html
@@ -21,7 +13,8 @@ baseurl: /cnc-assg-i
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes" />
   <meta name="robots" content="none" />
 
-  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | absolute_url }}" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="/assets/css/style.css" /> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=fallback" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400..700&display=fallback" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=fallback" />
@@ -29,7 +22,8 @@ baseurl: /cnc-assg-i
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=fallback" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=fallback" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Taviraj:wght@400;600&display=fallback" />
-  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | absolute_url }}" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" /> -->
   <title>naiithink</title>
 
   <script type="text/javascript">
@@ -129,14 +123,25 @@ baseurl: /cnc-assg-i
             <source
               type="image/png"
               media="(prefers-color-scheme: light)"
-              srcset="{{ '/assets/img/light/twitter-search-naiithink-light-cursor.png' | absolute_url }}"
+              srcset="assets/img/light/twitter-search-naiithink-light-cursor.png"
               alt="twitter-search-naiithink-light-cursor"
               draggable="false" />
             <img
-              src="{{ '/assets/img/dark/twitter-search-naiithink-dark-cursor.png' | absolute_url }}"
+              src="assets/img/dark/twitter-search-naiithink-dark-cursor.png"
               alt="twitter-search-naiithink-dark-cursor"
               height="40em"
               draggable="false" />
+            <!-- <source
+              type="image/png"
+              media="(prefers-color-scheme: light)"
+              srcset="/assets/img/light/twitter-search-naiithink-light-cursor.png"
+              alt="twitter-search-naiithink-light-cursor"
+              draggable="false" />
+            <img
+              src="/assets/img/dark/twitter-search-naiithink-dark-cursor.png"
+              alt="twitter-search-naiithink-dark-cursor"
+              height="40em"
+              draggable="false" /> -->
           </picture>
         </div>
         <div id="qa5">
