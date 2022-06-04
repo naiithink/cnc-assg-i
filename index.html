@@ -15,7 +15,7 @@ baseurl: /cnc-assg-i
 <head>
   <meta charset="utf-8" />
   <meta name="author" content="naiithink" />
-  <meta name="description" content="CNC, Assignment I -- create a simple self introduction page with HTML and CSS" />
+  <meta name="description" content="{{ page.description }}" />
   <meta name="referrer" content="no-referrer" />
   <meta name="color-scheme" content="light dark" />
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes" />
@@ -30,7 +30,7 @@ baseurl: /cnc-assg-i
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=fallback" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Taviraj:wght@400;600&display=fallback" />
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | absolute_url }}" />
-  <title>naiithink</title>
+  <title>{{ page.title }}</title>
 
   <script type="text/javascript">
     function onloadHandler() {
